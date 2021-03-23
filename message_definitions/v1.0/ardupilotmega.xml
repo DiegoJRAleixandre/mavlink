@@ -1677,5 +1677,11 @@
       <field type="float" name="min_distance" units="m">Minimum distance the sensor can measure.</field>
       <field type="float" name="max_distance" units="m">Maximum distance the sensor can measure.</field>
     </message>
+    <message id="11050" name="VA_CAMERA_STATUS">
+      <description>VisionAerial camera feedback.</description>
+      <field type="uint8_t" name="is_recording">0 camera is not recording, 1 camera is recording.</field>
+      <field type="uint8_t" name="zoom_visible">Index value for the zoom of the visible camera.</field>
+      <field type="uint8_t" name="zoom_thermal">Index value for the zoom of the thermal camera.</field>
+    </message>
   </messages>
 </mavlink>
